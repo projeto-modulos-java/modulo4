@@ -1,4 +1,4 @@
-package com.projetos.pedido.controllers.DTO;
+package com.projetos.pedido.controllers.entities;
 
 public record PedidoRequestDTO(
     int qtd,

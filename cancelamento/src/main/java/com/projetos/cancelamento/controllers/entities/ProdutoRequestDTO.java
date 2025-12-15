@@ -1,4 +1,4 @@
-package com.projetos.cancelamento.controllers.DTO;
+package com.projetos.cancelamento.controllers.entities;
 
 public record ProdutoRequestDTO(
     String name,

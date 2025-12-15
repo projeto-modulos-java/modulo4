@@ -2,7 +2,7 @@ package com.projetos.pedido.controllers.adapter;
 
 import org.springframework.stereotype.Service;
 
-import com.projetos.pedido.controllers.DTO.PedidoRequestDTO;
+import com.projetos.pedido.controllers.entities.PedidoRequestDTO;
 import com.projetos.pedido.entities.Pedido;
 import com.projetos.pedido.entities.Produto;
 

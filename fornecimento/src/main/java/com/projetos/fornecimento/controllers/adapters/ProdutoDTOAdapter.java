@@ -2,7 +2,7 @@ package com.projetos.fornecimento.controllers.adapters;
 
 import org.springframework.stereotype.Service;
 
-import com.projetos.fornecimento.controllers.DTO.ProdutoRequestDTO;
+import com.projetos.fornecimento.controllers.entities.ProdutoRequestDTO;
 import com.projetos.fornecimento.entities.Produto;
 
 @Service

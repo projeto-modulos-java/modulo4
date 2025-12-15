@@ -1,4 +1,4 @@
-package com.projetos.fornecimento.controllers.DTO;
+package com.projetos.fornecimento.controllers.entities;
 
 public record ProdutoRequestDTO(
     String name,

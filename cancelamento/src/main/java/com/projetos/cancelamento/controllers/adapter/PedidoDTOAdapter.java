@@ -2,7 +2,7 @@ package com.projetos.cancelamento.controllers.adapter;
 
 import org.springframework.stereotype.Service;
 
-import com.projetos.cancelamento.controllers.DTO.PedidoRequestDTO;
+import com.projetos.cancelamento.controllers.entities.PedidoRequestDTO;
 import com.projetos.cancelamento.entities.Pedido;
 import com.projetos.cancelamento.entities.Produto;
 
