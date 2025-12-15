@@ -14,10 +14,10 @@ import com.projetos.cancelamento.services.adapters.ProdutoServiceAdapter;
 @Service
 public class PedidoService {
 
-    final private PedidoRepository repository;
-    final private PedidoServiceAdapter adapter;
-    final private ProdutoRepository produtoRepository;
-    final private ProdutoServiceAdapter  produtoAdapter;
+    private final PedidoRepository repository;
+    private final PedidoServiceAdapter adapter;
+    private final ProdutoRepository produtoRepository;
+    private final ProdutoServiceAdapter  produtoAdapter;
 
 
     public PedidoService(PedidoRepository repository, PedidoServiceAdapter adapter, ProdutoRepository produtoRepository,

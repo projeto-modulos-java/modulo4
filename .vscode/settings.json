@@ -3,5 +3,6 @@
     "sonarlint.connectedMode.project": {
         "connectionId": "projeto-modulos-java",
         "projectKey": "projeto-modulos-java_modulo4"
-    }
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
 }

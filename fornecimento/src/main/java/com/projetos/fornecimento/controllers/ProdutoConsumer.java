@@ -26,7 +26,7 @@ public class ProdutoConsumer {
     public Consumer<ProdutoRequestDTO> create(){
         return value -> {
             service.create(adapter.adapt(value));
-            logger.info("Produto criado com sucesso: " + value.name());
+            logger.info("Produto criado com sucesso: {}", value.name());
         };
     }
 

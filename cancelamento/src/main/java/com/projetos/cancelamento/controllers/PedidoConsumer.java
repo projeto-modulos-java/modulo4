@@ -21,7 +21,7 @@ public class PedidoConsumer {
     @Bean
     public Consumer<Integer> cancelamento(){
         return value -> {
-            logger.info("cancelando pedido com id: " + value);
+            logger.info("cancelando pedido com id: {}", value);
             service.cancelarPedido(value);
         };
     }
