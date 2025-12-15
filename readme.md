@@ -2,15 +2,15 @@
 
 Esse modulo tem 4 apis, sendo 3 delas consumidoras de mensagens de topicos do kafka e uma delas a produtora, a api que gerara os eventos a serem processados.
 
-### api
+### Api
 
 Esse projeto é uma api REST que deve ser usada para gerar os eventos de criacao e exclusao dos pedidos e produtos. Ela será responsavel por exibir essas entidades e por realizar seu cadastro e exclusao. Um pedido representa uma compra de um cliente de determinado produto cadastrado, em que é possivel selecionar a quantidade de produtos comprado e o controle de quantos produtos ainda estao em estoque.
 
-### pedido
+### Pedido
 
 Aplicacao responsavel por consumir os eventos de cadastro de pedido e processa-los. Ele cadastra cada pedido no banco de dados e diminui a quantidade de produtos em estoque dos produtos que foram comprados no pedido.
 
-### fornecimento
+### Fornecimento
 
 Responsavel pelo gerenciamento dos produtos e suas quantidades em estoque. Quando um produto é excluido, todos os pedidos relacionados a ele sao cancelados.
 
