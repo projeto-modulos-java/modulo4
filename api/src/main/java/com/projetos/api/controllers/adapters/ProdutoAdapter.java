@@ -14,6 +14,6 @@ public class ProdutoAdapter {
     }
 
     public List<ProdutoResponseDTO> adapt(List<Produto> produtos){
-        return produtos.stream().map((produto) -> this.adapt(produto)).toList();
+        return produtos.stream().map(this::adapt).toList();
     }
 }

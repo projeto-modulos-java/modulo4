@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 import com.projetos.fornecimento.entities.Produto;
 import com.projetos.fornecimento.repositories.entities.ProdutoEntity;
 
-
-
 @Service
 public class ProdutoServiceAdapter {
     public Produto adapt(ProdutoEntity produto){
@@ -20,6 +18,6 @@ public class ProdutoServiceAdapter {
     }
 
     public List<Produto> adaptProdutos(List<ProdutoEntity> produtos){
-        return produtos.stream().map(produto -> this.adapt(produto)).toList();
+        return produtos.stream().map(this::adapt).toList();
     }
 }

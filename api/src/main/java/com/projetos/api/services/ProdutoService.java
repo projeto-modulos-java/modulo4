@@ -10,8 +10,8 @@ import com.projetos.api.services.adapters.ProdutoServiceAdapter;
 
 @Service
 public class ProdutoService {
-    final private ProdutoRepository repository;
-    final private ProdutoServiceAdapter adapter;
+    private final ProdutoRepository repository;
+    private final ProdutoServiceAdapter adapter;
 
     public ProdutoService(ProdutoRepository repository, ProdutoServiceAdapter adapter) {
         this.repository = repository;

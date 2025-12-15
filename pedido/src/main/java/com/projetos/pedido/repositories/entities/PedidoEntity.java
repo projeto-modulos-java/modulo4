@@ -23,7 +23,6 @@ public class PedidoEntity {
     }
 
     public PedidoEntity(Integer id, int qtd, String descrition, ProdutoEntity produto) {
-        System.out.println("id produto: " + id);
         this.id = id;
         this.qtd = qtd;
         this.descrition = descrition;

@@ -9,7 +9,7 @@ import com.projetos.api.repositories.entities.PedidoEntity;
 
 @Service
 public class PedidoServiceAdapter {
-    final private ProdutoServiceAdapter produtoAdapter;
+    private final ProdutoServiceAdapter produtoAdapter;
 
     public PedidoServiceAdapter(ProdutoServiceAdapter produtoAdapter){
         this.produtoAdapter = produtoAdapter;
@@ -24,7 +24,7 @@ public class PedidoServiceAdapter {
     }
 
     public List<Pedido> adaptEntities(List<PedidoEntity> produtos){
-        return produtos.stream().map(produto -> this.adapt(produto)).toList();
+        return produtos.stream().map(this::adapt).toList();
     }   
 
 

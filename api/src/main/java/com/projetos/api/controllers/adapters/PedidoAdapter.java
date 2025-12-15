@@ -10,7 +10,7 @@ import com.projetos.api.entities.Pedido;
 @Service
 public class PedidoAdapter {
 
-    final private ProdutoAdapter adapter;
+    private final ProdutoAdapter adapter;
 
     public PedidoAdapter(ProdutoAdapter adapter){
         this.adapter = adapter;
@@ -21,6 +21,6 @@ public class PedidoAdapter {
     }
 
     public List<PedidoResponseDTO> adaptPedidoResponse(List<Pedido> pedidos){
-        return pedidos.stream().map(pedido -> this.adaptPedidoResponse(pedido)).toList();
+        return pedidos.stream().map(this::adaptPedidoResponse).toList();
     }
 }

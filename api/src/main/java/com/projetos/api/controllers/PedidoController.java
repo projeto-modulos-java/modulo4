@@ -23,10 +23,10 @@ import com.projetos.api.services.PedidoService;
 @RequestMapping(path = "/pedido")
 public class PedidoController {
 
-    final private PedidoService service;
-    final private PedidoAdapter adapter;
-    final private StreamBridge streamBridge;
-    final private Logger logger = LoggerFactory.getLogger(PedidoController.class);
+    private final PedidoService service;
+    private final PedidoAdapter adapter;
+    private final StreamBridge streamBridge;
+    private final Logger logger = LoggerFactory.getLogger(PedidoController.class);
 
     public PedidoController(PedidoService service, PedidoAdapter adapter, StreamBridge streamBridge){
         this.service = service;
@@ -42,7 +42,7 @@ public class PedidoController {
 
     @GetMapping("/{id}")
     public PedidoResponseDTO findById(@PathVariable int id){
-        logger.info("Buscando pedido por id: " + id);
+        logger.info("Buscando pedido por id: {}", id);
         return this.adapter.adaptPedidoResponse(service.findById(id));
     }
 

@@ -18,6 +18,6 @@ public class ProdutoServiceAdapter {
     }
 
     public List<Produto> adaptProdutos(List<ProdutoEntity> produtos){
-        return produtos.stream().map(produto -> this.adapt(produto)).toList();
+        return produtos.stream().map(this::adapt).toList();
     }
 }

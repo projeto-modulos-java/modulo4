@@ -13,10 +13,10 @@ import com.projetos.fornecimento.services.adapters.ProdutoServiceAdapter;
 
 @Service
 public class ProdutoService {
-    final private ProdutoRepository repository;
-    final private ProdutoServiceAdapter adapter;
-    final private PedidoRepository pedidoRepository;
-    final private PedidoServiceAdapter pedidoAdapter;
+    private final ProdutoRepository repository;
+    private final ProdutoServiceAdapter adapter;
+    private final PedidoRepository pedidoRepository;
+    private final PedidoServiceAdapter pedidoAdapter;
 
     public ProdutoService(ProdutoRepository repository, ProdutoServiceAdapter adapter,
             PedidoRepository pedidoRepository, PedidoServiceAdapter pedidoAdapter) {

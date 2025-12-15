@@ -10,8 +10,8 @@ import com.projetos.api.services.adapters.PedidoServiceAdapter;
 @Service
 public class PedidoService {
 
-    final private PedidoRepository repository;
-    final private PedidoServiceAdapter adapter;
+    private final PedidoRepository repository;
+    private final PedidoServiceAdapter adapter;
 
     public PedidoService(PedidoRepository repository, PedidoServiceAdapter adapter){
         this.repository = repository;
